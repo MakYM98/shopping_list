@@ -23,23 +23,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Images",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Have a snapshot of the item you are buying to prevent mistakes!",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Budget",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Note down your budget and how much you spent, and we will tell you whether you have exceeded your budget!",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Multiple Lists",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Ability to create multiple lists and keep track of your frequent purchases!",
   },
 ];
 
