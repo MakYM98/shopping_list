@@ -28,10 +28,10 @@ export default function Business() {
             <div className={layout.sectionInfo}>
                 <h2 className={styles.heading2}>
                     You do the shopping, <br className="sm:block hidden"/>
-                    We'll help you track.
+                    We&apos;ll help you track.
                 </h2>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    Through this application, you won't have to worry about 
+                    Through this application, you won&apos;t have to worry about 
                     forgetting any items, how the items look or going above
                     your budget!
                 </p>
