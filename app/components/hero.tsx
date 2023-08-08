@@ -17,12 +17,10 @@ export default function Hero() {
                 <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
                     <Image src={discount} alt="discount" className="w-[32px] h-[32px]"/>
                     <p className={`${styles.paragraph} ml-2 text`}> 
-                        <span className="text-white">
-                            20%
-                        </span> Discount for {" "}
-                        <span className="text-white">
-                            1 Month
-                        </span> Account
+                        Currently <span className="text-white">
+                            Free
+                        </span>.
+                        Try it now!
                     </p>
                 </div>
 
@@ -48,7 +46,7 @@ export default function Hero() {
                 <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient"/>
                 <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient"/>
                 <div className="absolute z-[0] w-[50%] h-[55%] right-20 bottom-20 blue__gradient"/>
-            </div>
+            </div> 
         </section>
     )
 }
