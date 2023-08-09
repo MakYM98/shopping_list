@@ -3,6 +3,7 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./button";
 
 const close = require('../../public/assets/close.svg')
 const logo = require('../../public/assets/logo.svg')
@@ -34,6 +35,29 @@ export default function Navbar() {
                         </Link>
                     </li>
                 ))}
+                <li 
+                        key={'test'} 
+                        className={`
+                            font-normal 
+                            cursor-pointer
+                            text-[16px]
+                            text-black
+                            mr-5
+                        `}
+                    >
+                    <Button styles={"rounded-xl"} text="Sign Up"/>
+                </li>
+                <li 
+                        key={'test'} 
+                        className={`
+                            font-normal 
+                            cursor-pointer
+                            text-[16px]
+                            text-black
+                        `}
+                    >
+                    <Button styles={"rounded-xl"} text="Login"/>
+                </li>
             </ul>
             <div className="sm:hidden flex flex-1 justify-end items-center">
                 <Image 

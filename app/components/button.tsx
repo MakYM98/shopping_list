@@ -5,13 +5,13 @@ import styles from '../style'
 import { discount, robot } from '../../public/assets'
 import Image from "next/image";
 
-export default function Button({styles}:any) {
+export default function Button(props:any) {
     return (
         <button type="button" className={
             `py-4 px-6 bg-blue-gradient font-medium text-[18px] text-primary 
-            outline-none ${styles}`
+            outline-none ${props.styles}`
         }>
-            Get Started
+            {props.text}
         </button>
     )
 }

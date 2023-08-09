@@ -35,7 +35,7 @@ export default function Business() {
                     forgetting any items, how the items look or going above
                     your budget!
                 </p>
-                <Button styles="mt-10"/>
+                <Button styles="mt-10" text="Get Started"/>
             </div>
 
             <div className={`${layout.sectionImg} flex-col`}>
