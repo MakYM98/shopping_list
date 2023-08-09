@@ -34,7 +34,7 @@ const database = getDatabase(app);
 
   return (
     <div className='bg-black w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`md:px-16 px-6 ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar/>
         </div>

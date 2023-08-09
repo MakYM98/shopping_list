@@ -113,7 +113,7 @@ export default function Navbar() {
                                     cursor-pointer
                                     text-[16px]
                                     text-white
-                                    ${index === navLinks.length - 1 ? 'mr-0': 'mb-4'}
+                                    mb-4
                                 `}
                             >
                                 <Link 
@@ -123,6 +123,34 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         ))}
+                        {/* Login/SignUp Components */}
+                        <li 
+                                key={'signup'} 
+                                className={`
+                                    font-normal 
+                                    cursor-pointer
+                                    text-[16px]
+                                  text-white
+                                    mb-4
+                                `}
+                            >
+                            <p onClick={() => setToggleSUP((prev) => !prev)}>
+                                Sign Up
+                            </p>
+                        </li>
+                        <li 
+                                key={'signup'} 
+                                className={`
+                                    font-normal 
+                                    cursor-pointer
+                                    text-[16px]
+                                  text-white
+                                `}
+                            >
+                            <p onClick={() => setToggleLOG((prev) => !prev)}>
+                                Login
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
