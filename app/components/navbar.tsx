@@ -4,16 +4,23 @@ import { navLinks } from "../constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./button";
-
-const close = require('../../public/assets/close.svg')
-const logo = require('../../public/assets/logo.svg')
-const menu = require('../../public/assets/menu.svg')
+import SignUpModal from "./signup";
+import { close, logo, menu } from "@/public/assets";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false)
+    const [toggleAcc, setToggleAcc] = useState(false)
+
+    const closeAcc = () => {
+        setToggleAcc(false)
+    }
 
     return(
         <nav className="w-full flex py-6 justify-between items-center navbar">
+            <SignUpModal 
+                visible={toggleAcc}
+                closeFunc={()=>{closeAcc()}}
+            />
             <Image src={logo} alt="Web Logo" className="w-[124px] h-[32px]"/>
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
                 {navLinks.map((nav, index) => (
@@ -35,8 +42,9 @@ export default function Navbar() {
                         </Link>
                     </li>
                 ))}
+                {/* Login/SignUp Components */}
                 <li 
-                        key={'test'} 
+                        key={'signup'} 
                         className={`
                             font-normal 
                             cursor-pointer
@@ -45,10 +53,14 @@ export default function Navbar() {
                             mr-5
                         `}
                     >
-                    <Button styles={"rounded-xl"} text="Sign Up"/>
+                    <Button
+                        styles={"rounded-xl"} 
+                        text="Sign Up"
+                        clickFunc={() => setToggleAcc((prev) => !prev)}
+                    />
                 </li>
                 <li 
-                        key={'test'} 
+                        key={'login'} 
                         className={`
                             font-normal 
                             cursor-pointer

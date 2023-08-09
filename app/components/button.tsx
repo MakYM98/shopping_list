@@ -7,10 +7,14 @@ import Image from "next/image";
 
 export default function Button(props:any) {
     return (
-        <button type="button" className={
-            `py-4 px-6 bg-blue-gradient font-medium text-[18px] text-primary 
-            outline-none ${props.styles}`
-        }>
+        <button 
+            type="button" 
+            className={
+                `py-4 px-6 bg-blue-gradient font-medium text-[18px] text-primary 
+                outline-none ${props.styles}`
+            }
+            onClick={props.clickFunc}
+        >
             {props.text}
         </button>
     )
